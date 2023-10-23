@@ -67,7 +67,7 @@ const Hero = () => {
         />
         <a
           href="/Taylor Murdock's Resume.pdf"
-          download={true}
+          target="_blank"
           className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg"
         >
           Resume
