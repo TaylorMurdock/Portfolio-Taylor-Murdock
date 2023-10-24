@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -18,12 +19,35 @@ const Contact = () => {
             tjmurd4545@gmail.com
           </a>
         </p>
-        <p className="text-lg">
-          Phone:{" "}
-          <a href="tel:7067559419" className="text-rose-600">
-            706-755-9419
-          </a>
-        </p>
+        <div className="flex flex-col items-center mt-2">
+          {/* Center and stack icons under the phone number */}
+          <p className="text-lg">
+            Phone:{" "}
+            <a href="tel:7067559419" className="text-rose-600">
+              706-755-9419
+            </a>
+          </p>
+          <div className="flex mt-2">
+            {" "}
+            {/* Use flex to display icons side by side */}
+            <a
+              href="https://www.linkedin.com/in/taylor-murdock/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-rose-600 mr-2"
+            >
+              <FaLinkedin size={32} />
+            </a>
+            <a
+              href="https://github.com/TaylorMurdock?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+              className="text-rose-600"
+            >
+              <FaGithub size={32} />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,20 +1,9 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 import avatar from "../assets/goodpic.jpg";
 
 const Hero = () => {
-  const social = [
-    {
-      id: 1,
-      link: "https://www.linkedin.com/in/taylor-murdock/",
-      icon: <FaLinkedin />,
-    },
-    {
-      id: 2,
-      link: "https://github.com/TaylorMurdock?tab=repositories",
-      icon: <FaGithub />,
-    },
-  ];
+  const social = [];
 
   window.addEventListener("scroll", function () {
     const downArrow = document.querySelector(".down-arrow");
@@ -29,7 +18,7 @@ const Hero = () => {
   });
 
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center ">
+    <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
       <h2 className="text-5xl text-rose-600 uppercase font-bold">
         Taylor Murdock
       </h2>
@@ -45,7 +34,7 @@ const Hero = () => {
         working with .js or React, I approach each task with curiosity,
         enthusiasm, and a commitment to doing my best work.
       </p>
-      {/* social icons */}
+
       <div className="flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3">
         {social.map(({ id, link, icon }) => (
           <a
@@ -65,13 +54,6 @@ const Hero = () => {
           alt="avatar"
           className="w-60 h-60 md:w-72 md:h-72 object-cover object-top rounded-xl"
         />
-        <a
-          href="/Taylor Murdock's Resume.pdf"
-          target="_blank"
-          className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg"
-        >
-          Resume
-        </a>
       </div>
       {/* arrow down animation */}
       <div className="mt-10 down-arrow">
