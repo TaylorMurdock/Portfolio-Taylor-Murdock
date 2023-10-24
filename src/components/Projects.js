@@ -40,7 +40,7 @@ const Projects = () => {
       title="Projects 💻"
       subtitle="Explore a selection of my latest projects, where I've applied my skills and creativity to solve real-world problems. Each project is a testament to my passion for coding and my commitment to delivering high-quality solutions."
     >
-      <div className="grid gap-10 lg:grid-cols-2">
+      <div id="projects" className="grid gap-10 lg:grid-cols-2">
         {projects.map(({ id, image, title, link, description, skills }) => {
           return (
             <a href={link} key={id}>
